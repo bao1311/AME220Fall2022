@@ -1,0 +1,51 @@
+
+img {
+
+  align-items: center;
+}
+
+th, td {
+			border: 1px solid black;
+			border-radius: 10px;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	font-size: 36px;
+	color: #0E363A;
+}
+
+h2 {
+	font-family: Times New Roman;
+	font-size: 24px;
+	color: #AD29C7;
+}
+
+.accordion {
+	background-color: #eeeeee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: center;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+	font-size: 16px;
+}
+
+.active, .accordion:hover {
+  background-color: #AD29C7; 
+}
+
+.panel {
+	padding: 18px;
+	display: none;
+	background-color: white;
+	overflow: hidden;
+}
+
+

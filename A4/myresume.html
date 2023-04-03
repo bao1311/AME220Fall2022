@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+	<title> My Resume </title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<img src='https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a821629507501.560d4c2a6b211.png' alt='My Resume' style="display:block; margin:0 auto;">
+<h1> My name: Gia Bao Phi </h1>
+<button class="accordion">My information</button>
+<div class="panel">
+	<ul>
+	<li><a href='https://www.agaveapt.com/' target="blank"><address> My address </address></a></li>
+	<li><phone> My number: (623) 280 7605 <br> </phone></li>
+	<li><idNum> My id:	1226854332 <br></idNum></li>
+	<li><birthday> My birthday: November 13th, 2003 </birthday></li>
+	</ul>
+</div>
+<button class="accordion"> Goals </button>
+<div class="panel">
+<ul>
+	<li> Get a software engineer job. </li>
+	<li> Graduate in 3 years. </li>
+	<li> Find an intership in second year. </li>
+	<li> Master Data Structure and Algorithm. </li>
+</ul>
+</div>
+<button class="accordion"> Education </button>
+<div class="panel">
+	<table style='border: 2px solid black; border-collapse: collapse'>
+		<thead>
+			<tr>
+				<th>Degree</th>
+				<th>School</th>
+				<th>Year</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>High School Diploma</td>
+				<td>VNU-HCM High School for The Gifted</td>
+				<td>2018-2021</td>
+			</tr>
+			<tr>
+				<td>Bachelor Degree in Computer Science</td>
+				<td>Arizona State University</td>
+				<td>2022-2027</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<button class="accordion"> Experience </button>
+<div class="panel">
+<ol>
+<li>
+<p>Internship at FPT as a software developer</p>
+</li>
+<li>
+<p>Know about Data Structure and master some algorithm</p>
+</li>
+<li>
+<p>Familiar with some programming languages (C++, Java, Javascript,...)
+</li>
+</ol>
+</div>
+<button class="accordion"> References </button>
+<div class="panel">
+<ul>
+<li> Reuth Miller </li>
+<li> Lydia Fritz </li>
+<li> Aaron Crippen </li>
+</ul>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
